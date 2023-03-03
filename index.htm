@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+  <head>
+    <title>FORMULARIO</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <form method=POST>
+      <table id="datos_personales">
+         <tr>
+            <td>
+               <FIELDSET>
+                  <LEGEND class="titulo">
+                     DATOS PERSONALES
+                  </LEGEND>
+                  <br>
+                  <table>
+                     <tr>
+                        <td>Nombre:</td>
+                        <td><INPUT TYPE="text" name="NOMBRE" maxlength=20></td>
+                        <td class="ancho100">Primer&nbsp;Apellido:</td>
+                        <td><INPUT TYPE="text" name="APELLIDO1" maxlength=20></td>
+                        <td class="ancho115">Segundo&nbsp;Apellido:</td>
+                        <td><INPUT TYPE="text" name="APELLIDO2" maxlength=20></td>
+                     </tr>
+                  </table>
+                  <table>
+                     <tr>
+                         <td class="ancho100">Sexo:</td>
+                         <td class="ancho10"><INPUT TYPE="radio" name="SEXO" value="Hombre"></td>
+                         <td class="ancho50">Hombre</td>
+                         <td class="ancho10"><INPUT TYPE="radio" name="SEXO" Value="Mujer"></td>
+                         <td class="ancho50">Mujer</td>
+                     </tr>
+                   </table>
+                   <table>
+                      <tr>
+                         <td class="ancho100">Grupo de edad:</td>
+                         <td class="ancho10"><INPUT TYPE="radio" name="EDAD" value="Menor de 20"></td>
+                         <td class="ancho90">Menor de 20</td>
+                         <td class="ancho10"><INPUT TYPE="radio" name="EDAD" Value="De 20 a 35"></td>
+                         <td class="ancho50">20-35</td>
+                         <td class="ancho10"><INPUT TYPE="radio" name="EDAD" Value="De 36 a 50"></td>
+                         <td class="ancho50">36-50</td>
+                         <td class="ancho10"><INPUT TYPE="radio" name="EDAD" Value="Mayor de 50"></td>
+                         <td class="ancho100">Mayor de 50</td>
+                       </tr>
+                     </table>
+                     <table>
+                       <tr>
+                          <td class="ancho120">Pais de nacimiento:</td>
+                          <td class="ancho10">
+                             <SELECT SIZE=1 name="PAIS">
+                                 <OPTION value="Alemania">Alemania
+                                 <OPTION value="Bolivia">Bolivia
+                                 <OPTION value="Canada">Canada
+                                 <OPTION value="Dinamarca">Dinamarca
+                                 <OPTION value="España">España
+                                 <OPTION value="Finlandia">Finlandia
+                                 <OPTION value="Grecia">Grecia
+                                 <OPTION value="Holanda">Holanda
+                                 <OPTION value="Italia">Italia
+                                 <OPTION value="Luxemburgo">Luxemburgo
+                             </SELECT>
+                          </td>
+                       </tr>
+                    </table>
+                 </FIELDSET>
+                 <FIELDSET>
+                    <LEGEND class="titulo">
+                       DATOS BANCARIOS
+                    </LEGEND>
+                    <br>
+                    <table>
+                       <tr>
+                           <td class="ancho50">C.C.C:</td>
+                           <td><INPUT TYPE="text" name="CCC" maxlength=20></td>
+                       </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td class="ancho150">Tipo de cuenta:</td>
+                            <td class="ancho10"><INPUT TYPE="radio" name="TIPOCUENTA" value="Ahorro"></td>
+                            <td class="ancho70">De ahorro</td>
+                            <td class="ancho10"><INPUT TYPE="radio" name="TIPOCUENTA" Value="Corriente"></td>
+                            <td class="ancho70">Corriente</td>
+                        </tr>
+                   </table>
+                   <table>
+                      <tr>
+                         <td class="ancho150">Tipo de sucursal:</td>
+                         <td class="ancho10"><INPUT TYPE="radio" name="TIPOSUCURSAL" value="Banco"></td>
+                         <td class="ancho70">Banco</td>
+                         <td class="ancho10"><INPUT TYPE="radio" name="TIPOSUCURSAL" Value="Caja"></td>
+                         <td class="ancho70">Caja</td>
+                      </tr>
+                   </table>
+                   <table>
+                      <tr>
+                         <td class="ancho150">Servicios contratados:</td>
+                         <td class="ancho10"><INPUT TYPE="checkbox" name="Nomina"></td>
+                         <td class="ancho150">Nómina domiciliada</td>
+                         <td class="ancho10"><INPUT TYPE="checkbox" name="Hipoteca"></td>
+                         <td class="ancho150">Préstamo hipotecario</td>
+                      </tr>
+                      <tr>
+                         <td></td>
+                         <td><INPUT TYPE="checkbox" name="Personal"></td>
+                         <td>Préstamo personal</td>
+                         <td><INPUT TYPE="checkbox" name="Seguridad"></td>
+                         <td>Caja de seguridad</td>
+                      </tr>
+                   </table>
+                </FIELDSET>
+                <FIELDSET>
+                    <LEGEND class="titulo">
+                       OTROS DATOS DE INTERÉS
+                    </LEGEND>
+                    <br>
+                    <table>
+                       <tr>
+                          <td colspan=6>¿Está usted interesado en alguno de estos temas?</td>
+                          <td>Otros temas:</td>
+                       </tr><tr>
+                          <td class="ancho10"><INPUT TYPE="checkbox" name="Libros"></td>
+                          <td class="ancho100">Libros</td>
+                          <td class="ancho10"><INPUT TYPE="checkbox" name="Viajes"></td>
+                          <td class="ancho100">Viajes</td>
+                          <td class="ancho10"><INPUT TYPE="checkbox" name="Informatica"></td>
+                          <td class="ancho100">Informática</td>
+                          <td rowspan=3><textarea rows=3 cols=30>Escriba aquí sus temas de interés</textarea></td>
+                       </tr>
+                       <tr>
+                          <td><INPUT TYPE="checkbox" name="Cursos"></td>
+                          <td>Cursos</td>
+                          <td><INPUT TYPE="checkbox" name="Seguros"></td>
+                          <td>Seguros</td>
+                          <td><INPUT TYPE="checkbox" name="Musica"></td>
+                          <td>Música</td>
+                       </tr>
+                       <tr>
+                          <td><INPUT TYPE="checkbox" name="Apuestas"></td>
+                          <td>Apuestas</td>
+                          <td><INPUT TYPE="checkbox" name="Idiomas"></td>
+                          <td> Idiomas</td>
+                          <td><INPUT TYPE="checkbox" name="Empleo"></td>
+                          <td>Empleo</td>
+                       </tr>
+                    </table>
+                 </FIELDSET>
+              </td>
+           </tr>
+           <tr>
+              <td>
+                  <table id="botones_form">
+                     <tr>
+                        <td><INPUT TYPE="submit" value="Enviar datos del formulario"></td>
+                        <td><INPUT TYPE="reset" value="Limpiar datos del formulario"></td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </table>
+      </form>
+   </body>
+</html>
